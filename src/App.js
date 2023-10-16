@@ -1,10 +1,13 @@
 import {Container,Nav,Navbar,Card,Col,Row,CardGroup} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import health from "./health.jpg";
+import education from "./education.webp"
+import nature from "./nature.jpg"
 
 function Application() {
   return (
     <>
-      <div class="app">
+       <div class="app">
         
         <Navbar bg="dark" data-bs-theme="dark">
           <Container >
@@ -24,7 +27,7 @@ function Application() {
       
         <Col key={1}>
           <Card>
-            <Card.Img variant="top" src="src\health.jpg" />
+           <Card.Img variant="top" src={health} style={{height:250}}/>
             <Card.Body>
               <Card.Title>Health Care</Card.Title>
               <Card.Text>
@@ -36,7 +39,7 @@ function Application() {
         </Col>
         <Col key={2}>
         <Card>
-          <Card.Img variant="top" src="src\education.webp/150px200" />
+          <Card.Img variant="top" src={education} style={{height:250}}/>
           <Card.Body>
             <Card.Title>Education</Card.Title>
             <Card.Text>
@@ -48,7 +51,7 @@ function Application() {
       </Col>
       <Col key={3}>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={nature} style={{height:250}}/>
         <Card.Body>
           <Card.Title>Mother Nature </Card.Title>
           <Card.Text>
