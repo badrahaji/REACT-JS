@@ -18,9 +18,9 @@ function Application() {
         </Navbar>
         <br />
         
-        <h1 class="text-center" >MY FIRST REACT APP </h1>
+        <h1 style={{color:"red",textAlign:"center", fontSize:80}}class="text-center" >MY FIRST REACT APP </h1>
         <br></br>
-        <Row xs={1} md={3} className="g-3" >
+        <Row xs={1} md={3} className="g-3" style={{border:25}}>
       
         <Col key={1}>
           <Card>
