@@ -3,14 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import health from "./health.jpg";
 import education from "./education.webp"
 import nature from "./nature.jpg"
-
 function Application() {
-  return (
+  return (   
     <>
+
        <div class="app">
-        
+        {/* NavBar  part*/}
         <Navbar bg="dark" data-bs-theme="dark">
-          <Container >
+          <Container > 
             <Navbar.Brand href="#home">Navbar</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
@@ -20,11 +20,13 @@ function Application() {
           </Container>
         </Navbar>
         <br />
-        
+        {/* my header text  */}
         <h1 style={{color:"red",textAlign:"center", fontSize:80}}class="text-center" >MY FIRST REACT APP </h1>
         <br></br>
+        
+        {/* my three cards grid */}
         <Row xs={1} md={3} className="g-3" style={{border:25}}>
-      
+      {/* first card */}
         <Col key={1}>
           <Card>
            <Card.Img variant="top" src={health} style={{height:250}}/>
@@ -37,6 +39,7 @@ function Application() {
             </Card.Body>
           </Card>
         </Col>
+        {/* seconde card */}
         <Col key={2}>
         <Card>
           <Card.Img variant="top" src={education} style={{height:250}}/>
@@ -49,6 +52,7 @@ function Application() {
           </Card.Body>
         </Card>
       </Col>
+      {/* third card  */}
       <Col key={3}>
       <Card>
         <Card.Img variant="top" src={nature} style={{height:250}}/>
